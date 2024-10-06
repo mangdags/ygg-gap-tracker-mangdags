@@ -3,7 +3,7 @@
 • Go to your own copy<br />
 • Click Extensions then select Apps Script<br />
 • Click the Triggers Icon (Clock) on the left panel<br />
-• Click Add a Trigger
+• Click Add a Trigger<br />
 • Follow the screenshot below then click Save: <br />
 ![image](https://github.com/user-attachments/assets/3d8d386b-185d-4b47-ac4c-3f2e52c4ad38)
 
