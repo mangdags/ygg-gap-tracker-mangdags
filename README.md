@@ -9,7 +9,11 @@
 • Click Add a Trigger<br />
 • Follow the screenshot below then click Save: <br />
 ![image](https://github.com/user-attachments/assets/3d8d386b-185d-4b47-ac4c-3f2e52c4ad38)
-
+<br />
+<br />
+**If presented by a warning, just click on Advance then Go to ygg-gap-tracker(or the name of your script)** <br />
+<br />
+![image](https://github.com/user-attachments/assets/a718f849-8766-4745-bddf-bbbcf9c74b20)<br /><br />
 *Note: The trigger might take some time to function*
 
 # HOW TO USE THE SHEET
@@ -30,12 +34,8 @@ You can also create your own groups (e.g. Game, Bounty, Ongoing, Done, etc.)<br 
 • Copy the script from this repository; [link here](https://github.com/mangdags/ygg-tracker-script/blob/main/script.gs) <br />
 • Paste it into the script Editor<br />
 • Give script a name on the upper left<br />
-• Click save<br /><br />
+• Click save<br />
 
-<br />
-**If presented by a warning, just click on Advance then Go to ygg-gap-tracker(or the name of your script)** <br />
-
-![image](https://github.com/user-attachments/assets/a718f849-8766-4745-bddf-bbbcf9c74b20)
 
 <br /><br />
 
