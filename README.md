@@ -1,9 +1,9 @@
 # HOW TO USE
 
-• Make a Copy of the Google Sheet
-• Go to your own copy
-• Click Extensions then select Apps Script
-• Copy the script from this repository
-• Paste it into the script Editor
-• Give script a name on the upper left
+• Make a Copy of the Google Sheet<br />
+• Go to your own copy<br />
+• Click Extensions then select Apps Script<br />
+• Copy the script from this repository<br />
+• Paste it into the script Editor<br />
+• Give script a name on the upper left<br />
 • Click save
