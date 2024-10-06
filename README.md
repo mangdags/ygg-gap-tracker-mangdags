@@ -30,7 +30,8 @@ You can also create your own groups (e.g. Game, Bounty, Ongoing, Done, etc.)<br 
 • Click save<br /><br />
 
 <br />
-***If presented by a warning, just click on Advance then Continue***<br />
+**If presented by a warning, just click on Advance then Continue** <br />
+
 ![image](https://github.com/user-attachments/assets/a718f849-8766-4745-bddf-bbbcf9c74b20)
 
 <br /><br />
