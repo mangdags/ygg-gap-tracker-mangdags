@@ -1,3 +1,6 @@
+# INSTRUCTIONS (READ FIRST)
+
+
 # ADD A TRIGGER
 • Make a Copy of the Google Sheet; [link here](https://docs.google.com/spreadsheets/d/1-KR7fqCPaNsfOYwj7UvKzx_k8HaBc2uKHvy285irvIw/edit?usp=sharing) <br />
 • Go to your own copy<br />
