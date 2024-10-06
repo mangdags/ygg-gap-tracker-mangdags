@@ -3,7 +3,7 @@
 • Make a Copy of the Google Sheet<br />
 • Go to your own copy<br />
 • Click Extensions then select Apps Script<br />
-• Copy the script from this repository; [link here](https://github.com/mangdags/ygg-tracker-script/blob/main/script.gs) <br />
+• Copy the script from this repository; [link here](https://github.com/mangdags/ygg-tracker-script/blob/main/script.gstarget="_blank") <br />
 • Paste it into the script Editor<br />
 • Give script a name on the upper left<br />
 • Click save<br /><br />
