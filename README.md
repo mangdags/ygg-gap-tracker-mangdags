@@ -1,5 +1,5 @@
 # ADD A TRIGGER
-• Make a Copy of the Google Sheet<br />
+• Make a Copy of the Google Sheet; [link here](https://docs.google.com/spreadsheets/d/1-KR7fqCPaNsfOYwj7UvKzx_k8HaBc2uKHvy285irvIw/edit?usp=sharing) <br />
 • Go to your own copy<br />
 • Click Extensions then select Apps Script<br />
 • Click the Triggers Icon (Clock) on the left panel<br />
@@ -21,7 +21,7 @@ You can also create your own groups (e.g. Game, Bounty, Ongoing, Done, etc.)<br 
 <br />
 
 # IF NO SCRIPT COPIED OVER
-• Make a Copy of the Google Sheet<br />
+• Make a Copy of the Google Sheet; [link here](https://docs.google.com/spreadsheets/d/1-KR7fqCPaNsfOYwj7UvKzx_k8HaBc2uKHvy285irvIw/edit?usp=sharing)<br />
 • Go to your own copy<br />
 • Click Extensions then select Apps Script<br />
 • Copy the script from this repository; [link here](https://github.com/mangdags/ygg-tracker-script/blob/main/script.gs) <br />
