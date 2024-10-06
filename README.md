@@ -22,3 +22,6 @@ You can also create your own groups (e.g. Game, Bounty, Ongoing, Done, etc.)<br 
 You can always DM me if you have any questions:<br />
 [MangDags Discord](https://discord.com/users/478517550431338507)<br />
 [Twitter/X](https://twitter.com/mangdags)
+
+
+![image](https://github.com/user-attachments/assets/3d8d386b-185d-4b47-ac4c-3f2e52c4ad38)
