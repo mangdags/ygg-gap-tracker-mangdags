@@ -12,6 +12,7 @@
 <br />
 <br />
 **If presented by a warning, just click on Advance then Go to ygg-gap-tracker(or the name of your script)** <br />
+** If the warning doesn't show up, check if you have pop-up blocker enabled **<br />
 <br />
 ![image](https://github.com/user-attachments/assets/a718f849-8766-4745-bddf-bbbcf9c74b20)<br /><br />
 *Note: The trigger might take some time to function*
