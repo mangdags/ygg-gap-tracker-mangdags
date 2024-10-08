@@ -22,9 +22,11 @@
 • Paste it under the URL column<br />
 • Select whether it's a Game or Bounty<br />
 • Select Premium or Non-Premium<br />
-<br /><br />
+<br />
 
-There are predefined groups for easy viewing, click the **Table Icon** beside the **Quests**.<br />
+*You can click the **Force Refresh** button if the data is not loaded properly. You might need to wait a few seconds*
+<br /><br />
+There are also predefined groups for easy viewing, click the **Table Icon** beside the **Quests**.<br />
 You can also create your own groups (e.g. Game, Bounty, Ongoing, Done, etc.)<br />
 <br />
 
