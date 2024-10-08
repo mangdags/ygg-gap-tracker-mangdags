@@ -2,17 +2,15 @@ function fetchReward(url, regex) {
   try {
     var options = {
       'muteHttpExceptions': true,
-      'headers': { 'Cache-Control': 'no-cache' } // Disable caching
+      'headers': { 'Cache-Control': 'no-cache' }
     };
     
     var response = UrlFetchApp.fetch(url, options);
     var html = response.getContentText();
     Logger.log("HTML Content: " + html);
     
-    // Execute the regex to find the first match
     var match = regex.exec(html);
     
-    // Log the match for debugging
     if (match && match[1]) {
       Logger.log("Match Found: " + match[1]); 
       
@@ -57,31 +55,24 @@ function getQuestManager(url) {
   try {
     var options = {
       'muteHttpExceptions': true,
-      'headers': { 'Cache-Control': 'no-cache' } // Disable caching
+      'headers': { 'Cache-Control': 'no-cache' }
     };
     
     var response = UrlFetchApp.fetch(url, options);
     var html = response.getContentText();
     
     var regex = /<div class="[^"]*YGGPill_large__RIRGh[^"]*YGGPill_yggPill__gaOdc[^"]*">[\s\S]*?<div class="[^"]*YGGPill_inner__X7z2r[^"]*">[\s\S]*?<div class="[^"]*ygg-overflow-ellipsis[^"]*">([^<]*)<\/div>/;
-
-
-    // Log the raw HTML for debugging
-    Logger.log(html);
     
     var match = regex.exec(html);
     
     if (match && match[1]) {
-     Logger.log("Match: " + match[1]);
       return match[1].trim(); 
     } else {
       
-     Logger.log("Match as: " + match[1]);
       return "Unknown";
     }
   } catch (e) {
-    Logger.log("Error: " + e.message);
-    return "Unknown"; // Return default value in case of an error
+    return "Unknown";
   }
 }
 
@@ -89,7 +80,7 @@ function getQuestCriteria(url){
   try {
     var options = {
       'muteHttpExceptions': true,
-      'headers': { 'Cache-Control': 'no-cache' } // Disable caching
+      'headers': { 'Cache-Control': 'no-cache' }
     };
     
     var response = UrlFetchApp.fetch(url, options);
@@ -103,7 +94,7 @@ function getQuestCriteria(url){
     
     if (match && match[1]) {
      Logger.log("Match: " + match[1]);
-      return match[1].trim(); // Return the quest manager's name
+      return match[1].trim();
     } else {
       
      Logger.log("Match as: " + match[1]);
@@ -111,7 +102,7 @@ function getQuestCriteria(url){
     }
   } catch (e) {
     Logger.log("Error: " + e.message);
-    return "Unknown Quest Manager"; // Return default value in case of an error
+    return "Unknown Quest Manager"; 
   }
 }
 
@@ -121,13 +112,12 @@ function getQuestName(url) {
     } else{
       var options = {
       'muteHttpExceptions': true,
-      'headers': { 'Cache-Control': 'no-cache' } // Disable caching
+      'headers': { 'Cache-Control': 'no-cache' }
     };
     
     var response = UrlFetchApp.fetch(url, options);
       var html = response.getContentText();
       
-      // Use regex to find the content of the <title> tag
       var titleMatch = html.match(/<title>(.*?)<\/title>/);
 
       if (titleMatch && titleMatch[1]) {
@@ -203,21 +193,19 @@ function clearFields(e){
 }
 
 function checkEmptyCellsInColumn(e) {
-  var sheet = SpreadsheetApp.getActiveSpreadsheet().getActiveSheet(); // Get active sheet
-  var columnA = 1; // Column A (1 represents column A)
-  var lastRow = sheet.getLastRow(); // Get the last row with content in the sheet
+  var sheet = SpreadsheetApp.getActiveSpreadsheet().getActiveSheet(); 
+  var columnA = 1; 
+  var lastRow = sheet.getLastRow();
   
-  // Loop through each row in column A
   for (var row = 1; row <= lastRow; row++) {
-    var cellValueA = sheet.getRange(row, columnA).getValue(); // Get the value of the cell in column A
+    var cellValueA = sheet.getRange(row, columnA).getValue();
     
-    // If column A is empty, clear the corresponding cell in column D
-    if (!cellValueA) { // This condition checks if the cell in column A is empty
+    if (!cellValueA) { 
       sheet.getRange(row, 5).clearContent(); 
       sheet.getRange(row, 6).clearContent(); 
       sheet.getRange(row, 2).clearContent();
       sheet.getRange(row, 3).clearContent();
-      Logger.log("Cleared column D for row: " + row); // Log the action for debugging
+      Logger.log("Cleared column D for row: " + row); 
     }
   }
 }
@@ -255,15 +243,25 @@ function roninClicked(){
 
 }
 
+function forceRefresh() {
+  var sheet = SpreadsheetApp.getActiveSpreadsheet().getActiveSheet();
+  
+  var targetSheetName = "Tracker";
+
+  if (sheet.getName() !== targetSheetName) {
+    return;
+  }
+
+  questTypeSelected({ source: SpreadsheetApp.getActiveSpreadsheet(), range: sheet.getActiveRange() });
+}
+
 function onEdit(e) {
   var sheet = e.source.getActiveSheet();
   
-  // Specify the name of the sheet you want to target
-  var targetSheetName = "Quests";
+  var targetSheetName = "Tracker";
 
-  // Check if the active sheet is the one you want to work with
   if (sheet.getName() !== targetSheetName) {
-    return; // Exit the function if the sheet is not the target sheet
+    return;
   }
 
   questTypeSelected(e);
